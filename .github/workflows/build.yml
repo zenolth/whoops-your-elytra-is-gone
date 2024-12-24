@@ -6,7 +6,7 @@ jobs:
   build:
     permissions:
       contents: write
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - name: Check Environment Variables
         run: env
