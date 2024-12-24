@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.zenolth.whoops_your_elytra_is_gone.common.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "EndCityPieceMixin",
+    "PlayerEntityMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

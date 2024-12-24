@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "whoops_your_elytra_is_gone",
+  "version": "${version}",
+  "name": "Whoops your elytra is gone",
+  "description": "A mod that prevents players from dropping their elytra on death (so it's gone) and (optionally) decreases their spawn chance in end ships.",
+  "authors": [
+    {
+      "name": "Zen",
+      "contact": {
+        "homepage": "https://zenolth.site",
+        "email": "contact@zenolth.site"
+      }
+    }
+  ],
+  "contact": {},
+  "license": "AGPL-3.0",
+  "icon": "assets/whoops_your_elytra_is_gone/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "net.zenolth.whoops_your_elytra_is_gone.client.Whoops_your_elytra_is_goneClient"
+    ],
+    "main": [
+      "net.zenolth.whoops_your_elytra_is_gone.common.Whoops_your_elytra_is_gone"
+    ]
+  },
+  "mixins": [
+    "whoops_your_elytra_is_gone.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}",
+    "yet_another_config_lib_v3": ">=3.6.1"
+  }
+}
